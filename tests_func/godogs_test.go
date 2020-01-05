@@ -5,13 +5,6 @@ import (
 	"encoding/json"
 	"flag"
 	"fmt"
-	"github.com/DATA-DOG/godog"
-	"github.com/DATA-DOG/godog/colors"
-	"github.com/DATA-DOG/godog/gherkin"
-	"github.com/docker/docker/client"
-	testHelper "github.com/wal-g/wal-g/tests_func/helpers"
-	testUtils "github.com/wal-g/wal-g/tests_func/utils"
-	"go.mongodb.org/mongo-driver/mongo/readpref"
 	"log"
 	"os"
 	"path/filepath"
@@ -19,6 +12,14 @@ import (
 	"strings"
 	"testing"
 	"time"
+
+	"github.com/DATA-DOG/godog"
+	"github.com/DATA-DOG/godog/colors"
+	"github.com/DATA-DOG/godog/gherkin"
+	"github.com/docker/docker/client"
+	testHelper "github.com/wal-g/wal-g/tests_func/helpers"
+	testUtils "github.com/wal-g/wal-g/tests_func/utils"
+	"go.mongodb.org/mongo-driver/mongo/readpref"
 )
 
 var testContext *testHelper.TestContextType

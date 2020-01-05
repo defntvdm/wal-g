@@ -2,12 +2,13 @@ package internal
 
 import (
 	"archive/tar"
-	"github.com/wal-g/wal-g/utility"
 	"io"
 	"os"
 	"path"
 	"path/filepath"
 	"strings"
+
+	"github.com/wal-g/wal-g/utility"
 
 	"github.com/pkg/errors"
 	"github.com/wal-g/tracelog"

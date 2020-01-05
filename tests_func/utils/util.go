@@ -214,7 +214,7 @@ func WriteEnvFile(envLines []string, envFile string) error {
 		return fmt.Errorf("error in setuping staging: %v", err)
 	}
 	defer file.Close()
-	for _, envLine:= range envLines {
+	for _, envLine := range envLines {
 		key, value := SplitEnvLine(envLine)
 		_, err = fmt.Fprintf(file, "%s=%s\n", key, value)
 		if err != nil {

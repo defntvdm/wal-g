@@ -4,16 +4,17 @@ import (
 	"context"
 	"errors"
 	"fmt"
-	"github.com/docker/docker/api/types"
-	"github.com/docker/docker/api/types/filters"
-	"github.com/docker/docker/api/types/network"
-	"github.com/docker/docker/client"
-	testUtils "github.com/wal-g/wal-g/tests_func/utils"
 	"io/ioutil"
 	"math/rand"
 	"os"
 	"os/exec"
 	"time"
+
+	"github.com/docker/docker/api/types"
+	"github.com/docker/docker/api/types/filters"
+	"github.com/docker/docker/api/types/network"
+	"github.com/docker/docker/client"
+	testUtils "github.com/wal-g/wal-g/tests_func/utils"
 )
 
 const envDockerMachineName = "DOCKER_MACHINE_NAME"

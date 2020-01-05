@@ -2,12 +2,13 @@ package functest
 
 import (
 	"fmt"
+	"os"
+	"os/exec"
+
 	"github.com/docker/docker/client"
 	testConf "github.com/wal-g/wal-g/tests_func/config"
 	testHelper "github.com/wal-g/wal-g/tests_func/helpers"
 	testUtils "github.com/wal-g/wal-g/tests_func/utils"
-	"os"
-	"os/exec"
 )
 
 func BuildBase(testContext *testHelper.TestContextType) error {

@@ -3,11 +3,12 @@ package helpers
 import (
 	"bufio"
 	"fmt"
-	testConf "github.com/wal-g/wal-g/tests_func/config"
-	testUtils "github.com/wal-g/wal-g/tests_func/utils"
 	"math/rand"
 	"os"
 	"strconv"
+
+	testConf "github.com/wal-g/wal-g/tests_func/config"
+	testUtils "github.com/wal-g/wal-g/tests_func/utils"
 )
 
 type UserConfiguration struct {

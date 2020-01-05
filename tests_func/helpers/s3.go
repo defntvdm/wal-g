@@ -2,9 +2,10 @@ package helpers
 
 import (
 	"fmt"
+	"strings"
+
 	"github.com/docker/docker/api/types"
 	testUtils "github.com/wal-g/wal-g/tests_func/utils"
-	"strings"
 )
 
 func ConfigureS3(testContext *TestContextType, containerName *types.Container) error {
